@@ -18,8 +18,8 @@ public class UserData {
      */
     private String MyUserName;
     private String MyPassword;
-    private ArrayList<Integer> Scores = new ArrayList<>();
-    private ArrayList<Integer> Levels = new ArrayList<>();
+    private ArrayList<Integer> Scores=new ArrayList<>();
+    private ArrayList<Integer> Levels=new ArrayList<>();
 
     public UserData()
     {

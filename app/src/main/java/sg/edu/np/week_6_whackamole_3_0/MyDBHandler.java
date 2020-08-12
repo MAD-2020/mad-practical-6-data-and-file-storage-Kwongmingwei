@@ -68,14 +68,11 @@ public class MyDBHandler extends SQLiteOpenHelper {
             This is triggered on DB creation.
             Log.v(TAG, "DB Created: " + CREATE_ACCOUNTS_TABLE);
          */
-        String CREATE_ACCOUNTS_TABLE=
-                "CREATE TABLE "+ ACCOUNTS +
-                "("+ COLUMN_USERNAME +" TEXT,"+
-                        COLUMN_PASSWORD +" TEXT, "+
-                        COLUMN_LEVEL+" INTEGER, "+
-                        COLUMN_SCORE+" INTEGER"+
-                        "PRIMARY KEY (" + COLUMN_USERNAME + "," +COLUMN_LEVEL + ")" +")";
+        Log.v(TAG,"CREATE");
 
+        String CREATE_ACCOUNTS_TABLE = "CREATE TABLE " + ACCOUNTS + "(" + COLUMN_USERNAME + " TEXT, "
+                + COLUMN_PASSWORD + " TEXT, "  + COLUMN_LEVEL + " INTEGER, " + COLUMN_SCORE + " INTEGER "
+                + ")";
         db.execSQL(CREATE_ACCOUNTS_TABLE);
         Log.v(TAG, "DB Created: " + CREATE_ACCOUNTS_TABLE);
     }
